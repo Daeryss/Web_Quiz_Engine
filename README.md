@@ -1,4 +1,5 @@
 Description
+
 Currently, your service allows creating new quizzes, but there may be problems if the client didn't provide all the quiz data. In such cases, the service will create an incorrect unsolvable quiz which is very frustrating for those who are trying to solve it.
 
 At this stage, you should fix this so that the service does not accept incorrect quizzes. Another task is to make quizzes more interesting by supporting the arbitrary number of correct options (from zero to all). It means that to solve a quiz, the client needs to send all correct options at once, or zero if all options are wrong.
@@ -10,6 +11,7 @@ Spring Boot bean validation
 There are only two modified operations for creating and solving quizzes. All other operations should not be changed or deleted.
 
 Create a new quiz
+
 To create a new quiz, the client needs to send a JSON as the request's body via POST to /api/quizzes. The JSON should contain the four fields:
 
 title: a string, required;
