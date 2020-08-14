@@ -26,6 +26,7 @@ Here is a new JSON quiz as an example:
   "options": ["Americano","Tea","Cappuccino","Sprite"],
   "answer": [0,2]
 }
+
 The answer equals [0,2] corresponds to the first and the third item from the options array ("Americano" and "Cappuccino").
 
 The server response is a JSON with four fields: id, title, text and options. Here is an example:
